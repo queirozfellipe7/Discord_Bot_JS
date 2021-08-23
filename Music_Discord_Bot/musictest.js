@@ -1,35 +1,3 @@
-/*const Discord = require('discord.js');
-const bot = new Discord.Client();
-const ytdl = require('ytdl-core');
-const streamOptions = {seek: 0, volume:1};
-
-const token = 'ODYyODUxMDUwODQ2NjgzMTk3.YOeWqQ.9kbAFtsctPubvVxopz0cHgCQLkk';
-bot.login(token);
-const PREFIX = '!'
-bot.on('ready', () => {
-    console.log('estou pronto para ser usado!');
-    });
-
-
-bot.on('message', async message =>{
-    let args = message.content.substring(PREFIX.length).split(" ");
-    console.log(args[0]);
-
-    switch(args[0]){
-        case 'play':
-          if(!message.member.voiceChannel){
-              messagem.channel.send("Tem que ta em um canal de voz garai");
-          }
-        break;
-
-        case 'stop':
-            memama();
-        break;
-    }
-
-});*/
-
-
 const Discord = require("discord.js");
 const ytdl = require("ytdl-core");
 const client = new Discord.Client();
@@ -154,4 +122,4 @@ function play(guild, song) {
   serverQueue.textChannel.send(`Start playing: **${song.title}**`);
 }
 
-client.login('ODYyODUxMDUwODQ2NjgzMTk3.YOeWqQ.9kbAFtsctPubvVxopz0cHgCQLkk');
+client.login('Discord TOKEN');
